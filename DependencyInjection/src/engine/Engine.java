@@ -26,12 +26,13 @@ public class Engine {
 	public String getName() {return name;}
 	public int getDisplacement() {return displacement;}
 	
+	
 	private void setName(String name) throws Exception {
 		if (name.trim().length() == 0) {
 			throw new Exception("Engine name cannot be blank");
 		}
 	}
-	private void setDisplacement(int displacement) throws Exception {
+	private void setDisplacement(int displacement)  throws Exception {
 		if (displacement < 0) {
 			throw new Exception("Engine displacement cannot be zero or negative");
 		}
